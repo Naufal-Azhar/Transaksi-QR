@@ -1,4 +1,4 @@
-# CUPANGQR
+# CUPANG-QR
 
 *Ensuring Authentic & Transparent Betta Fish Transactions through QR & Blockchain*
 

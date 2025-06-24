@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verifikasi Transaksi</title>
+  </head>
+  <body>
+    <h1>Verifikasi Hash Transaksi</h1>
+    <form action="/verify_hash" method="post">
+      <label for="transaction_hash">Hash Transaksi:</label><br />
+      <input
+        type="text"
+        id="transaction_hash"
+        name="transaction_hash"
+        required
+      /><br /><br />
+      <button type="submit">Verifikasi</button>
+    </form>
+    <br /><br />
+    <a href="/">Kembali ke Form Transaksi</a>
+  </body>
+</html>

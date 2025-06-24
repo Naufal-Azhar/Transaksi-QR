@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hasil Verifikasi Hash Transaksi</title>
+  </head>
+  <body>
+    <h1>Hasil Verifikasi Hash Transaksi</h1>
+    <p>Hash: <strong>{{ hash_to_verify }}</strong></p>
+    {% if found %}
+    <p style="color: green">
+      ✅ Hash ditemukan di blockchain. Transaksi valid.
+    </p>
+    <h3>Detail Transaksi:</h3>
+    <ul>
+      <li><strong>Pembeli:</strong> {{ transaction.buyer }}</li>
+      <li><strong>Penjual:</strong> {{ transaction.seller }}</li>
+      <li><strong>Jumlah Transaksi:</strong> {{ transaction.amount }}</li>
+      <li>
+        <strong>Waktu Transaksi:</strong> {{ transaction.formatted_timestamp }}
+      </li>
+    </ul>
+    {% else %}
+    <p style="color: red">
+      ❌ Hash TIDAK ditemukan di blockchain. Transaksi tidak valid atau belum
+      dicatat.
+    </p>
+    {% endif %}
+    <br /><br />
+    <a href="/verify">Kembali ke Verifikasi</a>
+  </body>
+</html>

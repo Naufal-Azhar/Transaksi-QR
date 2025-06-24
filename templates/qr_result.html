@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Transaksi</title>
+  </head>
+  <body>
+    <h1>QR Code Transaksi Berhasil Dibuat!</h1>
+    <p>Hash Transaksi: <strong>{{ transaction_hash }}</strong></p>
+    <p>QR Code (bisa discan pakai Scan Org atau HP):</p>
+    <img src="/qr/{{ qr_filename }}" alt="QR Code" />
+    <br /><br />
+    <a href="/">Kembali ke Form</a>
+  </body>
+</html>
